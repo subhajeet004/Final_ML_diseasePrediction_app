@@ -12,9 +12,11 @@ st.set_page_config(page_title="Health Assistant",
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
-diabetes_model = pickle.load(open('C:/Users/inage/Downloads/pythonNotebooks/notes/Multiple Disease Prediction System/saved models/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('C:/Users/inage/Downloads/pythonNotebooks/notes/Multiple Disease Prediction System/saved models/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open('C:/Users/inage/Downloads/pythonNotebooks/notes/Multiple Disease Prediction System/saved models/parkinsons_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
